@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar with Multiple Dropdowns</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">MyShop</div>
+
+    <!-- Center Links -->
+    <div class="nav-center">
+      <div class="nav-item">
+        <button class="nav-link">Home</button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">About</button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">Contact</button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">Offers ▾</button>
+        <div class="dropdown">
+          <a href="#">Summer Sale</a>
+          <a href="#">Winter Sale</a>
+          <a href="#">Festival Offer</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">Pages ▾</button>
+        <div class="dropdown">
+          <a href="#">Gallery</a>
+          <a href="#">Our Team</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <!-- Cart Section in Navbar -->
+<div class="cart" id="cartIcon">
+  🛒
+  <div class="cart-count" id="cartCount">0</div>
+</div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-left">
+      <h2>Welcome to MyShop</h2>
+      <p>Your one-stop destination for all the latest trends and deals. Enjoy seasonal offers and top-quality products at unbeatable prices!</p>
+      <button>Shop Now</button>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.pexels.com/photos/7372077/pexels-photo-7372077.jpeg" alt="Hero Image" />
+    </div>
+  </div>
+</section>
+
+<!-- Food Card Section -->
+<section class="card-section">
+  <h2 class="section-title">Popular Foods</h2>
+  <div class="card-container">
+
+    <!-- Card 1 -->
+    <div class="food-card" data-regular="250" data-discount="200">
+      <div class="discount-badge"></div>
+      <img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg" alt="Burger" />
+      <h3>Burger</h3>
+      <p class="price">
+        <span class="regular-price"></span>
+        <span class="discount-price"></span>
+      </p>
+      <button>Order Now</button>
+    </div>
+
+    
+    <!-- Card 2 -->
+    <div class="food-card" data-regular="600" data-discount="300">
+      <div class="discount-badge"></div>
+      <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg" alt="Pizza" />
+      <h3>Pizza</h3>
+      <p class="price">
+        <span class="regular-price"></span>
+        <span class="discount-price"></span>
+      </p>
+      <button>Order Now</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="food-card" data-regular="1000" data-discount="800">
+      <div class="discount-badge"></div>
+      <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" alt="Pasta" />
+      <h3>Pasta</h3>
+      <p class="price">
+        <span class="regular-price"></span>
+        <span class="discount-price"></span>
+      </p>
+      <button>Order Now</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+ <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar with Multiple Dropdowns</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">MyShop</div>
+
+    <!-- Center Links -->
+    <div class="nav-center">
+      <div class="nav-item">
+        <button class="nav-link">Home</button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">About</button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">Contact</button>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">Offers ▾</button>
+        <div class="dropdown">
+          <a href="#">Summer Sale</a>
+          <a href="#">Winter Sale</a>
+          <a href="#">Festival Offer</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-link">Pages ▾</button>
+        <div class="dropdown">
+          <a href="#">Gallery</a>
+          <a href="#">Our Team</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div class="cart" onclick="addToCart()">
+        🛒
+        <div class="cart-count" id="cartCount">0</div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-left">
+      <h2>Welcome to MyShop</h2>
+      <p>Your one-stop destination for all the latest trends and deals. Enjoy seasonal offers and top-quality products at unbeatable prices!</p>
+      <button>Shop Now</button>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.pexels.com/photos/7372077/pexels-photo-7372077.jpeg" alt="Hero Image" />
+    </div>
+  </div>
+</section>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
